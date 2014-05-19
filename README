@@ -1,5 +1,4 @@
-Ticketshop is a simple web service aimed to help non-professional/off-broadway producers create tickets for their shows so they can be distributed. The service will be completely free for use, and users will be able to use it as guests, hence: without having to create a profile. 
-
+Ticketshop is a simple web service aimed to help non-professional/off-broadway producers create tickets for their shows so they can be distributed. The service will be completely free, and users will be able to use it as guests. (hence: without having to create a profile and save information)
 
 Upon visiting the ticketshop web page, users will be given a list of ticket templates to choose from and a set of web forms binded to each section of the ticket. Once the user fills out each form field, their input will "fill in the blanks" set on the template and the ticket will be generated on to a confirmation page. If a user is satisfied, he or she may request a copy, which would return a PDF of the ticket that was just generated. If there were any errors or if the template doesn't satisfy them, they can go back to the edit page and choose another template or fix said errors. 
 
