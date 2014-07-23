@@ -1,0 +1,70 @@
+<html>
+
+<head>
+	<meta name="keywords" content="">
+	<meta charset="utf-8">
+
+	<title>Basic jsPDF Page</title>
+	<script src="jspdf.min.js"></script>
+</head>
+
+<body id="container">
+	<script>
+		var doc = new jsPDF();
+
+		//outer border of ticket
+		doc.setDrawColor(0,0,0); 
+		doc.rect(10, 40, 190,70);
+
+		//powder blue background
+		doc.setFillColor(204,255,255); 
+		doc.rect(10.4, 40.4, 142, 69.5, 'F');
+
+		//dark blue top info box
+		doc.setFillColor(102,153,153); 
+		doc.rect(11, 40.7,141, 12,'F');
+
+		//white fill for dark blue top box
+		doc.setFillColor(255, 255, 255); 
+		doc.rect(11.5, 41.5, 140, 9, 'F');
+
+		//white center info box
+		doc.setFillColor(255, 255, 255);
+		doc.rect(44, 53.1, 71, 48, 'F');
+
+		//LEFT SIDE gray boxes
+		doc.setFillColor(204, 204, 204);
+		doc.rect(118, 56, 35, 39, 'F');
+
+		//LEFT SIDE white boxes
+		// doc.setFillColor(255, 255, 255);
+		// doc.rect();
+
+		//RIGHT SIDE gray boxes
+		// doc.setFillColor(204, 204, 204);
+		// doc.rect();
+
+		//RIGHT SIDE white boxes
+		// doc.setFillColor(255, 255, 255);
+		// doc.rect();
+
+		//dark blue bottom info box
+		doc.setFillColor(102,153,153); 
+		doc.rect(11, 98,141, 11,'F');
+
+		//white fill for dark blue bottom box
+		doc.setFillColor(255, 255, 255);  
+		doc.rect(11.5, 98.8, 140, 9, 'F');
+
+		doc.text(20, 20, 'Example Ticket, Fuck You Gary');
+		doc.text(20, 30, 'Sometimes I think about murdering Gary.');
+
+		function downloadMe() {
+			doc.save('test1.pdf');
+		}
+		
+	</script>
+	<button type="submit" onclick="downloadMe()">Download!</button>
+</body>
+
+</html>
